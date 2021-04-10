@@ -51,9 +51,9 @@ app.add_url_rule('/tool', 'webio_view', webio_view(predict),
             methods=['GET', 'POST', 'OPTIONS'])
 
 
-#if __name__ == '__main__':
-    #predict()
+if __name__ == '__main__':
+    app.run()
 
-app.run(host='localhost', port=80)
+#app.run(host='localhost', port=80)
 
 #visit http://localhost/tool to open the PyWebIO application.
